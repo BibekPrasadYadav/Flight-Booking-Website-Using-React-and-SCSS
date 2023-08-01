@@ -1,5 +1,5 @@
 import React from 'react'
-import aeroplane from '../../assets/takeoffs.png'
+import aeroplane from '../../assets/takeoffshd.png'
 import video from '../../assets/sunset.mp4'
 
 export const Home = () => {
