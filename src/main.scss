@@ -482,3 +482,110 @@ h2{
         
     }
 }
+
+//Traveler Section Styling:
+.travelers{
+    .sectionContainer{
+        text-align: center;
+        .travelersContainer{
+            margin-top: 1rem;
+            gap: 1.5rem;
+
+
+            .singleTraveler{
+                position: relative;
+                height: 280px;
+                width: 85%;
+                max-width: 250px;
+                overflow: hidden;
+                border-radius: 10rem;
+                gap: 1rem;
+                margin: auto;
+
+                .destinationImage, .travelerPicture, .travelerName{
+                    position: absolute;
+                }
+
+                .destinationImage{
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    object-fit: cover;
+                }
+
+                .travelerPicture{
+                    height: 50px;
+                    width: 50px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    bottom: 30px;
+                    left: 40%;
+                    transform: translateX(-50%);
+                    transition: .4s ease-in-out;
+                    animation: animated 2.3s infinite;
+                }
+
+                @keyframes animated {
+                    0%{
+                        transform: translateY(0px);
+                    }
+                    50%{
+                        transform: translateY(8px);
+                    }
+                    100%{
+                        transform: translateY(0px);
+                    }
+                    
+                }
+
+                .travelerName{
+                    bottom: -100%;
+                    width: 100%;
+                    height: max-content;
+                    background-color: var(--whiteColor);
+                    padding: 1.5rem 1rem;
+                    animation: animatedBorders 2.3s infinite;
+
+                    span{
+                        display: block;
+                        color: black;
+                        font-weight: 700;
+                    }
+                    p{
+                        color: var(--PrimaryColor);
+                        font-style: italic;
+                    }
+                }
+
+                @keyframes animatedBorders {
+                    0%{
+                        border-radius: 0rem;
+                    }
+                    50%{
+                        border-radius: 2rem;
+                    }
+                    100%{
+                        border-radius: 0rem;
+                    }
+                }
+                    &:hover{
+                        .travelerName{
+                            bottom: 0;
+                            transition: 0.5s ease-in-out;
+                        }
+
+                        .travelerPicture{
+                            bottom: 110px;
+                            transition: .5s ease-in-out;
+                        }
+                    }
+                
+            }
+                
+            
+        }
+    }
+}
