@@ -442,3 +442,43 @@ h2{
         }
     }
 }
+
+//Lounge Section Styling:
+.lounge{
+    .sectionContainer{
+        gap: 1.5rem;
+
+        .imgDiv{
+            margin: auto;
+            img{
+                width: 100%;
+                max-width: 430px;
+            }
+        }
+
+        .textDiv{
+            .grids{
+                margin-top: 1rem;
+                gap: 1.5rem;
+
+                .singleGrid{
+                    .gridTitle{
+                        display: block;
+                        padding-bottom: .5rem;
+                        font-weight: 500;
+                        color: var(--blackColor);
+                    }
+                }
+                .btn{
+                    justify-content: center;
+                    .icon{
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+        
+        
+    }
+}
