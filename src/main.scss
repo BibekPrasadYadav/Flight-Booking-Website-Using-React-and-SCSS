@@ -219,6 +219,14 @@ h2{
             }
         }
     }
+
+    .navbar_with_bg{
+        background: var(--SecondaryColor);
+        padding: .5rem 1rem;
+        box-shadow: var(--boxShadow);
+        display: flex;
+        align-items: center;
+    }
 }
 
 //Home Section Styling:
@@ -290,7 +298,8 @@ h2{
 
             .active{
                 background: var(--PrimaryColor);
-                color: wh;
+                color: var(--whiteColor);
+                font-weight: 500;
 
             }
         }

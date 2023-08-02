@@ -198,6 +198,13 @@ h2 {
     transition: 0.5s ease-in-out;
   }
 }
+.navBar .navbar_with_bg {
+  background: var(--SecondaryColor);
+  padding: 0.5rem 1rem;
+  box-shadow: var(--boxShadow);
+  display: flex;
+  align-items: center;
+}
 
 .home {
   padding-top: 10rem;
@@ -262,7 +269,8 @@ h2 {
 }
 .search .btns .singleBtn .active {
   background: var(--PrimaryColor);
-  color: wh;
+  color: var(--whiteColor);
+  font-weight: 500;
 }
 .search .searchInputs {
   width: 100%;
