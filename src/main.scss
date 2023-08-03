@@ -614,9 +614,11 @@ h2{
                     opacity: .5;
                 }
 
-                .btn{
-                    width: 100%;
-                }
+                
+            }
+            .btn{
+                width: 100%;
+                
             }
         }
     }
@@ -699,6 +701,157 @@ h2{
             
             
             
+        }
+    }
+}
+
+
+//Media Screen Styling
+@media screen and (min-width:480px) {
+    //Home Section Styling
+    .home{
+        padding-top: 12rem;
+    }
+
+    //Search Section Styling
+    .search{
+        .sectionContainer{
+            .searchInputs{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+            .btn{
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    //Travel Section Styling
+    .travelers{
+        .sectionContainer{
+            .travelersContainer{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    }
+
+    //Subscribe Section Styling
+    .subscribe{
+        .sectionContainer{
+            max-width: 80%;
+            margin: auto;
+
+            .inputDiv{
+                flex-direction: row;
+                padding: 0 .5rem;
+                border-radius: 3rem;
+            }
+        }
+    }
+
+    //Footer Section Styling
+    .footer{
+        .sectionContainer{
+            align-items: flex-start;
+            grid-template-columns: repeat(2,1fr);
+
+            .footerLinks{
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 570px) {
+    //Home section styling
+    .home{
+        .mainText{
+            width: 80%;
+        }
+        .homeImages{
+            .video{
+                border-radius: 15rem;
+            }
+
+            .plane{
+                position: absolute;
+                width: 95%;
+            }
+        }
+
+        
+    }
+    //Search section styling
+    .search{
+        .sectionContainer{
+            .btns{
+               
+                flex-direction: row;
+                border-radius: 3rem;
+            }
+        }
+    }
+
+    //Support Section Styling
+    .support{
+        .sectionContainer{
+            .infoDiv{
+                .textDiv{
+                    margin-top: 2rem;
+                    grid-template-columns: repeat(2,1fr);
+                }
+            }
+        }
+    }
+
+    //Info Section Styling
+    .info{
+        .infoContainer{
+            .titleDiv{
+                flex-direction: row;
+
+                h2{
+                    text-align: left;
+                    max-width: 500px;
+                }
+            }
+
+            .cardsDiv{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    }
+
+    //Lounge Section Styling
+    .lounge{
+        .sectionContainer{
+            .textDiv{
+                .grids{
+                    grid-template-columns: repeat(2,1fr);
+                }
+                
+            }
+        }
+    }
+
+    //Subscribe Section Styling
+    .subscribe{
+        .sectionContainer{
+            .inputDiv{
+                justify-content: space-between;
+                .btn{
+                    max-width: max-content;
+                }
+            }
+        }
+    }
+
+    //Footer Section Styling
+    .footer{
+        .sectionContainer{
+            padding-top: 2rem;
+            grid-template-columns: repeat(3,1fr);
         }
     }
 }
