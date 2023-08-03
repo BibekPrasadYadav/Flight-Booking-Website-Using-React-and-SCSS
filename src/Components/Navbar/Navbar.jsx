@@ -70,8 +70,10 @@ export const Navbar = () => {
             <li onClick={removeNavBar} className="listItem">Offers</li>
             <li onClick={removeNavBar} className="listItem">Seats</li>
             <li onClick={removeNavBar} className="listItem">Destination</li>
+            
           </ul>
           <button onClick={removeNavBar} className="btn flex btnOne">Contact</button>
+          
           
         </div>
         <button className="btn flex btnTwo">Contact</button>
