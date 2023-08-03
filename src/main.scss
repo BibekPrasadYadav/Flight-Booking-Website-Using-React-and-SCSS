@@ -608,7 +608,7 @@ h2{
                 outline: none;
                 background: transparent;
                 padding: 1rem .5rem;
-
+                margin-left: 10%;
                 &::placeholder{
                     font-size: 13px;
                     opacity: .5;
@@ -618,6 +618,87 @@ h2{
                     width: 100%;
                 }
             }
+        }
+    }
+}
+
+//Footer Section Styling:
+.footer{
+    background: var(--SecondaryColor);
+    .sectionContainer{
+        gap: 2.5rem;
+        .gridOne{
+            gap: 1rem;
+            justify-content: center;
+            margin: auto;
+
+            .logoDiv{
+                .Logo{
+                    width: 20%;
+                }
+            }
+
+            .socialIcon{
+                margin-top: 1rem;
+                gap: 1rem;
+                
+                .icon{
+                    height: 50px;
+                    width: 30px;
+                    border-radius: 10rem;
+                    border: 1px solid var(--borderColor);
+                    box-shadow: var(--boxShadow);
+                    padding: .4rem;
+                    color: var(--greyText);
+
+                    &:hover{
+                        background: var(--PrimaryColor);
+                        transform: translateY(-7);
+                        transition: var(--transition);
+                        border: 1px solid var(--PrimaryColor);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+
+        .footerLinks{
+            display: grid;
+            
+            .linkTitle{
+                color: var(--blackColor);
+                font-weight: 500;
+                display: block;
+                padding-bottom: 1rem;
+            }
+
+            li a{
+                display: block;
+                color: var(--greyText);
+                transition: var(--transition);
+                padding: .3rem 0;
+
+                &:hover{
+                    transform: translateX(7px);
+                    color: var(--PrimaryColor);
+                }
+
+            }
+        }
+    }
+    .copyRightDiv{
+        justify-content: center;
+        margin-top: 1.5rem;
+        padding: 1rem;
+        gap: 1rem;
+        border-top: 1px solid var(--greyText);
+        text-align: center;
+        
+
+        p a{
+            
+            
+            
         }
     }
 }
