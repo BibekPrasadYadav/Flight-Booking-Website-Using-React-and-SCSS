@@ -5,34 +5,33 @@ import { SiConsul } from "react-icons/si";
 import { BsPhoneVibrate } from "react-icons/bs";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { GoSignIn, GoSignOut } from "react-icons/go";
-import {CgMenuGridO} from "react-icons/cg"
+import { CgMenuGridO } from "react-icons/cg";
 
 //Imported Images:
-import logo from "../../assets/air_logo.png"
+import logo from "../../assets/air_logo.png";
 export const Navbar = () => {
-  const [active,setActive]=useState('navBarMenu');
+  const [active, setActive] = useState("navBarMenu");
 
-  const showNavBar=()=>{
-    setActive('navBarMenu showNavBar')
-  }
+  const showNavBar = () => {
+    setActive("navBarMenu showNavBar");
+  };
 
-  const removeNavBar=()=>{
-    setActive('navBarMenu')
-  }
+  const removeNavBar = () => {
+    setActive("navBarMenu");
+  };
 
   //Let us add the background color in second navbar:
 
-  const [bg,setBg]=useState('navBarTwo');
-  const setNavbarBg=()=>{
-    if(window.scrollY>=10){
-      setBg('navBarTwo navbar_with_bg');
-    }else{
-      setBg('navBarTwo')
+  const [noBg, addBg] = useState("navBarTwo");
+  const addBgColor = () => {
+    if (window.scrollY >= 10) {
+      addBg("navBarTwo navbar_With_Bg");
+    } else {
+      addBg("navBarTwo");
     }
-    
-  }
-//When scroll the second navbar color will change
-  window.addEventListener('scroll',setNavbarBg)
+  };
+  //When scroll the second navbar color will change
+  window.addEventListener("scroll", addBgColor);
 
   return (
     <div className="navBar flex">
@@ -40,45 +39,56 @@ export const Navbar = () => {
         <div>
           <SiConsul className="icon" />
         </div>
-      
-      <div className="none flex">
-        <li className="flex">
-          <BsPhoneVibrate className="icon" /> Support
-        </li>
-        <li className="flex">
-          <AiOutlineGlobal className="icon" /> Languages
-        </li>
+
+        <div className="none flex">
+          <li className="flex">
+            <BsPhoneVibrate className="icon" /> Support
+          </li>
+          <li className="flex">
+            <AiOutlineGlobal className="icon" /> Languages
+          </li>
+        </div>
+
+        <div className="atb flex">
+          <span>Sign In</span>
+          <span>Sign Out</span>
+        </div>
       </div>
 
-      <div className="atb flex">
-        <span>Sign In</span>
-        <span>Sign Out</span>
-      </div>
-
-      </div>
-
-      <div className={bg}>
-
+      <div className={noBg}>
         <div className="logoDiv">
-          <img src={logo} className="Logo"/>
+          <img src={logo} className="Logo" />
         </div>
 
         <div className={active}>
           <ul className="menu flex">
-            <li onClick={removeNavBar} className="listItem">Home</li>
-            <li onClick={removeNavBar} className="listItem">About</li>
-            <li onClick={removeNavBar} className="listItem">Offers</li>
-            <li onClick={removeNavBar} className="listItem">Seats</li>
-            <li onClick={removeNavBar} className="listItem">Destination</li>
-            
+            <li onClick={removeNavBar} className="listItem">
+              Home
+            </li>
+            <li onClick={removeNavBar} className="listItem">
+              About
+            </li>
+            <li onClick={removeNavBar} className="listItem">
+              Offers
+            </li>
+            <li onClick={removeNavBar} className="listItem">
+              Seats
+            </li>
+            <li onClick={removeNavBar} className="listItem">
+              Destination
+            </li>
           </ul>
-          <button onClick={removeNavBar} className="btn flex btnOne">Contact</button>
-          
-          
+
+          <button onClick={removeNavBar} className="btn flex btnOne">
+            Contact
+          </button>
+
         </div>
+
         <button className="btn flex btnTwo">Contact</button>
+
         <div onClick={showNavBar} className="toggleIcon">
-          <CgMenuGridO className="icon"/>
+          <CgMenuGridO className="icon" />
         </div>
       </div>
     </div>

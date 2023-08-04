@@ -181,52 +181,61 @@ h2{
                 box-shadow: var(--boxShadow);
                 border: 3px solid var(--whiteColor);
                 transition: .4s ease-in-out;
-            }
-            .menu{
-                flex-direction: column;
-                gap: .5rem;
-                text-align: center;
 
-                .listItem{
-                    padding: .5rem 0;
-                    cursor: pointer;
-                    color: var(--blackColor);
-                    &:hover{
-                        color: var(--PrimaryColor);
-                        font-weight: 700;
+                .menu{
+                    flex-direction: column;
+                    gap: .5rem;
+                    text-align: center;
+    
+                    .listItem{
+                        padding: .5rem 0;
+                        cursor: pointer;
+                        color: var(--blackColor);
+                        &:hover{
+                            color: var(--PrimaryColor);
+                            font-weight: 700;
+                        }
                     }
                 }
+    
+                .btnOne{
+                    display: block;
+                    justify-content: center;
+                    margin: auto;
+                    margin-top: 1rem;
+                }
             }
-
-            .btnOne{
-                display: block;
-                justify-content: center;
-                margin: auto;
-                margin-top: 1rem;
-            }
+           
             .btnTwo{
                 display: none;
             }
-            .toggleIcon{
-                .icon{
-                    font-size: 30px;
-                    color: var(--blackColor);
-                }
-            }
-            .showNavBar{
-                right: 50%;
-                transition: .5s ease-in-out;
+            
+        }
+        .toggleIcon{
+            .icon{
+                font-size: 30px;
+                color: var(--blackColor);
             }
         }
+        .showNavBar{
+            right: 50%;
+            transition: .5s ease-in-out;
+        }
+
+        
     }
 
-    .navbar_with_bg{
+    .navbar_With_Bg{
+        height: 15%;
         background: var(--SecondaryColor);
-        padding: .5rem 1rem;
+        padding: 0;
         box-shadow: var(--boxShadow);
         display: flex;
         align-items: center;
+        
     }
+
+   
 }
 
 //Home Section Styling:
@@ -273,38 +282,40 @@ h2{
         border: 2px solid var(--greyBg);
         border-radius: 16px;
         row-gap: 2rem;
-    }
-    .btns{
-        background: var(--SecondaryColor);
-        padding: .5rem;
-        border-radius: 1rem;
-        flex-direction: column;
-        width: 100%;
-        margin: auto;
 
-        .singleBtn{
-            padding: .8rem 1.5rem;
-            font-size: 13px;
-            border-radius: 3rem;
-            width: 80%;
-            text-align: center;
-            cursor: pointer;
-
-            &:hover{
-                background-color: var(--PrimaryColor);
-                color: var(--whiteColor);
-                font-weight: 500;
-                transition: .4s ease;
-            }
-
-            .active{
-                background: var(--PrimaryColor);
-                color: var(--whiteColor);
-                font-weight: 500;
-
+        .btns{
+            background: var(--SecondaryColor);
+            padding: .5rem;
+            border-radius: 1rem;
+            flex-direction: column;
+            width: 100%;
+            margin: auto;
+    
+            .singleBtn{
+                padding: .8rem 1.5rem;
+                font-size: 13px;
+                border-radius: 3rem;
+                width: 80%;
+                text-align: center;
+                cursor: pointer;
+    
+                &:hover{
+                    background-color: var(--PrimaryColor);
+                    color: var(--whiteColor);
+                    font-weight: 500;
+                    transition: .4s ease;
+                }
+    
+                .active{
+                    background: var(--PrimaryColor);
+                    color: var(--whiteColor);
+                    font-weight: 500;
+    
+                }
             }
         }
     }
+    
     .searchInputs{
         width: 100%;
         justify-content: center;

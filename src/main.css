@@ -166,21 +166,21 @@ h2 {
     border: 3px solid var(--whiteColor);
     transition: 0.4s ease-in-out;
   }
-  .navBar .navBarTwo .menu {
+  .navBar .navBarTwo .navBarMenu .menu {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
-  .navBar .navBarTwo .menu .listItem {
+  .navBar .navBarTwo .navBarMenu .menu .listItem {
     padding: 0.5rem 0;
     cursor: pointer;
     color: var(--blackColor);
   }
-  .navBar .navBarTwo .menu .listItem:hover {
+  .navBar .navBarTwo .navBarMenu .menu .listItem:hover {
     color: var(--PrimaryColor);
     font-weight: 700;
   }
-  .navBar .navBarTwo .btnOne {
+  .navBar .navBarTwo .navBarMenu .btnOne {
     display: block;
     justify-content: center;
     margin: auto;
@@ -189,18 +189,19 @@ h2 {
   .navBar .navBarTwo .btnTwo {
     display: none;
   }
-  .navBar .navBarTwo .toggleIcon .icon {
-    font-size: 30px;
-    color: var(--blackColor);
-  }
-  .navBar .navBarTwo .showNavBar {
-    right: 50%;
-    transition: 0.5s ease-in-out;
-  }
 }
-.navBar .navbar_with_bg {
+.navBar .navBarTwo .toggleIcon .icon {
+  font-size: 30px;
+  color: var(--blackColor);
+}
+.navBar .navBarTwo .showNavBar {
+  right: 50%;
+  transition: 0.5s ease-in-out;
+}
+.navBar .navbar_With_Bg {
+  height: 15%;
   background: var(--SecondaryColor);
-  padding: 0.5rem 1rem;
+  padding: 0;
   box-shadow: var(--boxShadow);
   display: flex;
   align-items: center;
@@ -246,7 +247,7 @@ h2 {
   border-radius: 16px;
   row-gap: 2rem;
 }
-.search .btns {
+.search .sectionContainer .btns {
   background: var(--SecondaryColor);
   padding: 0.5rem;
   border-radius: 1rem;
@@ -254,7 +255,7 @@ h2 {
   width: 100%;
   margin: auto;
 }
-.search .btns .singleBtn {
+.search .sectionContainer .btns .singleBtn {
   padding: 0.8rem 1.5rem;
   font-size: 13px;
   border-radius: 3rem;
@@ -262,13 +263,13 @@ h2 {
   text-align: center;
   cursor: pointer;
 }
-.search .btns .singleBtn:hover {
+.search .sectionContainer .btns .singleBtn:hover {
   background-color: var(--PrimaryColor);
   color: var(--whiteColor);
   font-weight: 500;
   transition: 0.4s ease;
 }
-.search .btns .singleBtn .active {
+.search .sectionContainer .btns .singleBtn .active {
   background: var(--PrimaryColor);
   color: var(--whiteColor);
   font-weight: 500;

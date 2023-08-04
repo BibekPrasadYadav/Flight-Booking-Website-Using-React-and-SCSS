@@ -19,7 +19,7 @@ export const Footer = () => {
 
   return (
     <div className='footer'>
-    <div data-aos='fade-down' data-aos-duration='2500' className='sectionContainer container grid'>
+    <div data-aos='fade-down' data-aos-duration='3500' className='sectionContainer container grid'>
       <div className="gridOne">
         <div className="logoDiv">
           <img src={logo} className='Logo' />
