@@ -288,6 +288,7 @@ h2{
             border-radius: 3rem;
             width: 80%;
             text-align: center;
+            cursor: pointer;
 
             &:hover{
                 background-color: var(--PrimaryColor);
@@ -1134,4 +1135,85 @@ h2{
             }
         }
     }
+}
+
+@media screen and (min-width:1106px) {
+    .subscribe{
+        .sectionContainer{
+            max-width: 60%;
+        }
+    }
+}
+
+@media screen and (min-width:1332px){
+    .navBar{
+        .navBarTwo{
+            .menu{
+                gap: 1rem;
+
+                .listItem{
+                    padding: 0 1.5rem;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .home{
+        .homeImages{
+
+            
+            .plane{
+                top: -130%;
+            }
+        
+        }
+    }
+
+    .support{
+        .sectionContainer{
+            .infoDiv{
+                gap: 1rem;
+
+                .textDiv{
+                    .singleInfo{
+                        p{
+                            max-width: 500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .subscribe{
+        .sectionContainer{
+            max-width: 50%;
+        }
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .home{
+        .homeImages{
+            .plane{
+                width: 90%;
+            }
+        }
+    }
+}
+
+::selection{
+    background-color: var(--PrimaryColor);
+    color: var(--whiteColor);
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background: var(--greyBg);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--PrimaryColor);
+    border-radius: 10px;
 }

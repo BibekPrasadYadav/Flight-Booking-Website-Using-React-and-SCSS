@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 //Imported Images
 import logo from '../../assets/air_logo.png'
@@ -6,10 +6,20 @@ import logo from '../../assets/air_logo.png'
 import {TiSocialFacebook} from 'react-icons/ti'
 import { AiFillYoutube, AiOutlineTwitter } from 'react-icons/ai'
 import {FaPinterestP} from 'react-icons/fa'
+
+//Import AOS:
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 export const Footer = () => {
+  //UseEffect to set animation duration
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+  },[])
+
   return (
     <div className='footer'>
-    <div className='sectionContainer container grid'>
+    <div data-aos='fade-down' data-aos-duration='2500' className='sectionContainer container grid'>
       <div className="gridOne">
         <div className="logoDiv">
           <img src={logo} className='Logo' />

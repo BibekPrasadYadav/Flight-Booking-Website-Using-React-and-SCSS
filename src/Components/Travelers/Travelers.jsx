@@ -1,4 +1,8 @@
-import React from "react";
+import React,{useEffect} from "react";
+
+//Import AOS:
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 import paris from "../../assets/paris.jpg";
 import dubai from "../../assets/dubai.jpg";
@@ -6,6 +10,12 @@ import london from "../../assets/london.jpg";
 import newYork from "../../assets/new-york.jpg";
 import user from "../../assets/UserAvatar.png";
 export const Travelers = () => {
+
+  //UseEffect to set animation duration
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+  },[])
+
   const travelers = [
     {
       id: 1,
@@ -39,9 +49,9 @@ export const Travelers = () => {
   return (
     <div className="travelers section container">
       <div className="sectionContainer">
-        <h2>Top travelers of this month!</h2>
+        <h2 data-aos='fade-down' data-aos-duration='2500'>Top travelers of this month!</h2>
 
-        <div className="travelersContainer grid">
+        <div data-aos='fade-up' data-aos-duration='2500' className="travelersContainer grid">
           {travelers.map(
             ({
               id,
