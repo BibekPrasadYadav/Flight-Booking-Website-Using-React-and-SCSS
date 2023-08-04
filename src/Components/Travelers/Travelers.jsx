@@ -51,7 +51,7 @@ export const Travelers = () => {
       <div className="sectionContainer">
         <h2 data-aos='fade-down' data-aos-duration='2500'>Top travelers of this month!</h2>
 
-        <div data-aos='fade-up' data-aos-duration='2500' className="travelersContainer grid">
+        <div data-aos='fade-up' data-aos-duration='3500' className="travelersContainer grid">
           {travelers.map(
             ({
               id,

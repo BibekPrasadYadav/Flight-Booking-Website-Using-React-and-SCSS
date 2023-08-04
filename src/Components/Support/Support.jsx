@@ -30,7 +30,7 @@ export const Support = () => {
 
           <div className="textDiv grid">
 
-            <div data-aos='fade-down' data-aos-duration='2500' className="singleInfo">
+            <div data-aos='fade-down' data-aos-duration='2000' className="singleInfo">
               <span className="number">01</span>
               <h4>Travel requirements from Dubai</h4>
               <p>Find help with booking and travel plans, see what to expect along
